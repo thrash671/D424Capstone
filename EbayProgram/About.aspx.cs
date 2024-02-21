@@ -39,9 +39,9 @@ namespace EbayProgram
                 SqlDataReader rdr = cmd2.ExecuteReader();
                 while (rdr.Read())
                 {
-                    string name = rdr.GetString(Convert.ToInt16("card_num")); //GetString(\"card_num\");
+                    //int name = rdr.GetOrdinal("card_num"); //GetString(rdr.GetOrdinal("card_num"))
 
-					listBoxFill.Items.Add(name);
+					//listBoxFill.Items.Add(name);
                 }
                 cmd.Dispose();
                 rdr.Close();
